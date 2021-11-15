@@ -1,0 +1,52 @@
+
+main {
+    display: flex;
+    flex-direction: column; 
+}
+.div-wrapper {
+   display: flex;
+   margin: 10px;
+
+}
+
+.color0{
+    background-color: aqua;
+}
+.color1{
+    background-color: midnightblue;
+}
+.color2{
+    background-color: blue;
+}
+.color3{
+    background-color: blueviolet;
+}
+.color4{
+    background-color: teal;
+    
+}
+.color5{
+    background-color: orange;
+}
+.color6{
+    background-color: darkviolet;
+}
+.color7{
+    background-color: greenyellow;
+}
+.color8{
+    background-color: green;
+    
+}
+.color9{
+    background-color: yellow;
+}
+.color10{
+    background-color: red;
+    
+}
+
+.div-column {
+    
+    padding: 20px;
+}
