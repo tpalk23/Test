@@ -1,8 +1,13 @@
-let mainContainer = document.createElement("div")
+const btnDisplay = document.querySelector("#btnDisplay");
+const btnDownload = document.querySelector("#btnDownload");
+const imgConverted = document.querySelector("#imgConverted");
 
+
+let mainContainer = document.createElement("div")
+let container = ""
 function coloredBoard() {
 mainContainer.innerHTML = ""
- let container = document.createElement("div")
+ container = document.createElement("div")
  
  container.classList.add("div-wrapper")
     
@@ -18,14 +23,17 @@ for(let i = 0; i <= 9; i += 1) {
     let columnDiv = document.createElement("div")
     columnDiv.classList.add(`color${Math.ceil(Math.random() * 10)}`, 'div-column')
     
-    rowDiv.append(columnDiv)
+    rowDiv.appendChild(columnDiv)
 }
 
 container.append(rowDiv) 
+console.log(container)
 }
 mainContainer.append(container)
 document.body.append(mainContainer)
 
 }
 
-setInterval(coloredBoard, 1000)
+
+coloredBoard()
+
